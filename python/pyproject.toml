@@ -9,6 +9,7 @@ dependencies = [
     "faiss-cpu>=1.13.2",
     "langchain>=1.2.9",
     "openai>=2.18.0",
+    "python-dotenv>=1.2.1",
 ]
 
 [dependency-groups]
