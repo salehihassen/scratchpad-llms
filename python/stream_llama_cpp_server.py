@@ -1,8 +1,18 @@
 """
 Demo to stream response from llama-server from llama-cpp
 
-REQUIRES: LLAMA_CPP_HOST set and llama-server running on that host.
-
+REQUIRES: 
+- LLAMA_CPP_HOST set and llama-server running on that host.
+- Accessible server running `llama-server`. See example below. 
+  ```
+  llama-server \
+    -m ./Hermes-3-Llama-3.1-8B.Q8_0.gguf \
+    -ngl 999 \
+    -c 4096 \
+    -np 2 \
+    --host 0.0.0.0 \
+    --port 8080
+  ```
 """
 
 import os
